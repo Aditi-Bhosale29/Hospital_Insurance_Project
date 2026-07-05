@@ -65,7 +65,7 @@ region = st.sidebar.selectbox(
 if st.sidebar.button("💰 Predict Charges"):
 
     st.subheader("📄 Customer Details")
-    st.write("Age: ", age)
+    st.write("Age: ", str(age))
     st.write("gender: ", sex)
     st.write("bmi : ", str(bmi))
     st.write("number of childer: ", str(children))
@@ -109,6 +109,18 @@ st.markdown(
     "<center>Created by Aditi Bhosale</center>",
     unsafe_allow_html=True,
 )
+#------Button colour 
+st.markdown("""
+<style>
+
+div.stButton > button:first-child {
+    background-color: #83f7b7;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 12px;
+}
+
 #---- Graph ----
 # predicted = result[0,0]
 
